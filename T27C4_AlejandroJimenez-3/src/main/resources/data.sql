@@ -1,10 +1,10 @@
-CREATE DATABASE IF NOT EXISTS Gralma;
+CREATE DATABASE IF NOT EXISTS gralma;
 USE Gralma;
 DROP TABLE IF EXISTS ventas;
 DROP TABLE IF EXISTS maquinas_registradoras;
 DROP TABLE IF EXISTS productos;
 DROP TABLE IF EXISTS cajeros;
-
+DROP TABLE IF EXISTS Usuarios;
 
 CREATE TABLE IF NOT EXISTS cajeros (
 codigo INT AUTO_INCREMENT,
@@ -62,5 +62,5 @@ INSERT INTO productos(nombre, precio) VALUES 	('Macarrones', 700),
 										
 INSERT INTO maquinas_registradoras(piso) VALUES (3),(2),(1),(3),(1),(2),(1),(0),(2),(1);
 
-INSERT INTO venta VALUES (2,2,1),(1,3,2),(1,2,3);
+INSERT INTO ventas VALUES (2,2,1),(1,3,2),(1,2,3);
 INSERT INTO Usuario (username, password, role) VALUES ('admin', '$2a$10$XURPShQNCsLjp1ESc2laoObo9QZDhxz73hJPaEv7/cBha4pk0AgP.','admin');
